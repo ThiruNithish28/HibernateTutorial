@@ -90,7 +90,13 @@ public class PersonAadharContr {
 		  	}                                             }
 		  	                            
 		  	 			When we create table like this  in Person table (id,name,address,A_id) and
-		  	 AadharCard table (id,name,age) we remove the column P_id in AadharCard table                                         
+		  	 AadharCard table (id,name,age) we remove the column P_id in AadharCard table   but the relationship is 
+		  	 Maintained With the help of @annotation( like @JoinColumns, mappedby ="")   
+		  	 ie; -----------------------------               -------------------
+		  	    | id  | name | address | P_id |              | id | name | age | 
+		  	     ------------------------------              -------------------
+		  	   
+		  	    
 		   */
 	// Note : Before execute the below code, If the command line exists then Remove the command line in the @Annotation in Dto class	
 		Person person = new Person();
